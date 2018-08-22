@@ -1,0 +1,32 @@
+package atividadebuscasequencial;
+import java.util.Scanner;
+import java.util.Random;
+
+
+public class AtividadeBuscaSequencial {
+    public static void main(String[] args) {
+        Scanner tcl = new Scanner (System.in);
+        Random dados = new Random();
+        
+      int vetor[] = new int[10];
+      boolean vencedor = false;
+      for (int i =0; i < 10; i++ ){
+          vetor[i] = dados.nextInt(40);
+          
+      }
+      System.out.println("digite o valor que vc deseja");
+      int valor = tcl.nextInt();
+      for (int i = 0; i < 10; i ++){
+          if (valor == vetor[i]){
+              System.out.println("valor sorteado");
+              vencedor = true;
+              break;
+              
+          }
+          if (vencedor== false);
+          System.out.println("infelizmente vc errou falow");
+          break;
+      }
+    }
+    
+}
