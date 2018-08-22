@@ -1,0 +1,33 @@
+
+package buscabinaria;
+
+public class BuscaBinaria {
+
+    public static void main(String[] args) {
+  		int [] array = { 1 , 8 , 34 , 67 , 9 , 6 , 78 , 12 , 56 , 41 , 90 };
+		Arrays . sort (array);
+	}
+	private  static  int  busca ( int [] matriz , int  chave ) {
+		retorno BuscaBinaria (array, 0 , array . length -  1 , chave);
+	}
+
+	private  static  int  BuscaBinaria( int [] array , int  menor , int  maior ,
+			int  chave ) {
+		int media = (maior + menor) /  2 ;
+		int valorMeio = array [media];
+
+		if (menor > maior)
+			return  - 1 ;
+        }else  if{(valorMeio == chave)
+			devolver mídia;
+        }else  if{ (valorMeio < chave)
+			retorno BuscaBinariaRecursiva (array, media + 1 , maior, chave);
+		outro
+			retorno BuscaBinaria (matriz, menor, mídia - 1 , chave);
+                     
+		Sistema . fora . println (busca (array, 6 ));
+		Sistema . fora . println (busca (array, 78 ));
+		Sistema . fora . println (busca (array, 90 ));
+                Sistema . fora . println ( Matrizes . toString (array));
+	}
+}
