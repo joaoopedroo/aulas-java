@@ -1,0 +1,49 @@
+import java.util.Scanner;
+
+
+public class Caixa_Eletronico {
+    
+    public static void main(String[] args) {
+        Scanner tcl = new Scanner (System.in);
+        int saldo = 0;
+        int continuar = 1;
+       
+       System.out.println("seja bem vindo lindo S2");
+      
+     
+        while(continuar ==1){
+           System.out.print("1 ver o total do saldo"+" ");
+           System.out.print("2 sacar agr"+" ");
+           System.out.print("3 depositar ligeiro"+" ");
+           System.out.print("4 sair");
+            int acao = tcl.nextInt();
+            
+            switch (acao){
+                case 1 : 
+                    System.out.println("seu saldo tem o total de "+ saldo);
+                    break;
+                case 2 : 
+                    System.out.println("digite o total que deseja sacar " );
+                    saldo-= tcl.nextInt();
+                    System.out.println("aguarde uns segundo que seu dinheiro ira sair");
+                    break;
+                case 3 : 
+                    System.out.println("digite o total que deseja depositar " );
+                    
+                    saldo+= tcl.nextInt();
+                    break;
+                case 4 : 
+                    continuar=0;
+                    System.out.println("obrigado pela visita mais acho que falimos!!");
+                    break;
+                default:
+                    System.out.println("digite uma ação valida");
+                    break;
+                    
+            }
+           
+       }  
+        
+    }
+    
+}
