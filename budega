@@ -1,0 +1,47 @@
+
+package budega;
+
+import java.util.Scanner;
+
+public class Budega {
+
+    public static void main(String[] args) {
+        Scanner tcl = new Scanner (System.in);
+     String produto[][] = new String [4][3];
+     
+     produto [0][0] = "45";
+     produto [0][1] = "xbox";
+     produto [0][2] = "R$700";
+     
+     produto [1][0] = "99";
+     produto [1][1] = "bicicleta";
+     produto [1][2] = "R$200";
+     
+     produto [2][0] = "78";
+     produto [2][1] = "mouse";
+     produto [2][2] = "R$40";
+     
+     produto [3][0] = "56";
+     produto [3][1] = "computador da apple";
+     produto [3][2] = "R$7000";
+     
+        System.out.println("digite o codigo do produto");
+        String codigo = tcl.next();
+        boolean encontrou = false;
+        for (int i = 0; i < produto.length; i++) {
+            if(codigo.equals(produto [i][0])){
+                System.out.println("produto : "+ produto [i][1]);
+                System.out.println("preço: "+ produto [i][2]);
+                encontrou = true;
+                break;
+               
+            }if(encontrou== false){
+                System.out.println("o produto não foi encontrado");
+            }
+            
+        }
+ 
+    }
+    
+}
+
